@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Welcome to the <%= title %></h1>
+    <p>Hi, <%= user.name %>! You are <%= user.age %> years old.</p>
+    <h2>Your Hobbies:</h2>
+    <ul>
+        <% user.hobbies.forEach(hobby => { %>
+            <li><%= hobby %></li>
+        <% }) %>
+    </ul>
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/about">About</a> | 
+        <a href="/contact">Contact</a>
+    </nav>
+</body>
+</html>
